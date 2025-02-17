@@ -1,0 +1,31 @@
+---
+import "../styles/global.css";
+import Hero from "./Hero.astro";
+import { Image } from "astro:assets";
+import zenGarden from "../assets/zen_garden.jpg";
+---
+
+<main class="space-y-32 md:pb-32 pb-12">
+  <Hero />
+  <section>
+    <h2 class="text-3xl font-bold mb-4 text-center pb-8">Latest Project</h2>
+    <div
+      id="project-card"
+      class="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-800 aspect-16/9 hover:scale-102 transition-all duration-300 hover:rotate-1 relative overflow-hidden hover:shadow-fuchsia-500/10 hover:shadow-lg"
+    >
+      <Image
+        src={zenGarden}
+        alt="ZenWrite Project Screenshot"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent"
+      >
+      </div>
+      <div class="flex flex-col justify-end h-full relative z-10">
+        <h3 class="text-xl font-bold mb-2">ZenWrite</h3>
+        <p class="text-gray-400">React, daisyUI, Tailwind CSS, TypeScript</p>
+      </div>
+    </div>
+  </section>
+</main>
