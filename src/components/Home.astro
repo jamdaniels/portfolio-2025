@@ -2,7 +2,7 @@
 import "../styles/global.css";
 import Hero from "./Hero.astro";
 import { Image } from "astro:assets";
-import zenGarden from "../assets/zen_garden.jpg";
+import zenwrite from "../assets/zenwrite.png";
 ---
 
 <main class="space-y-20 md:space-y-32">
@@ -12,10 +12,10 @@ import zenGarden from "../assets/zen_garden.jpg";
     <a href="/projects/zenwrite">
       <div
         id="project-card"
-        class="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-800 aspect-16/9 hover:scale-102 transition-all duration-300 hover:rotate-1 relative overflow-hidden hover:shadow-fuchsia-500/10 hover:shadow-lg"
+        class="bg-gray-900 max-w-3xl mx-auto p-6 rounded-lg shadow-md border border-gray-800 aspect-16/9 hover:scale-101 transition-all duration-300 relative overflow-hidden hover:shadow-fuchsia-500/10 hover:shadow-lg"
       >
         <Image
-          src={zenGarden}
+          src={zenwrite}
           alt="ZenWrite Project Screenshot"
           class="absolute inset-0 w-full h-full object-cover"
           loading="eager"
@@ -26,7 +26,7 @@ import zenGarden from "../assets/zen_garden.jpg";
         </div>
         <div class="flex flex-col justify-end h-full relative z-10">
           <h3 class="text-xl font-bold mb-2">ZenWrite</h3>
-          <p class="text-gray-400">React, daisyUI, Tailwind CSS, TypeScript</p>
+          <p class="text-gray-400">A calming writing experience</p>
         </div>
       </div>
     </a>

@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto", sans-serif; 
+}
 
 html,
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-roboto);
   background-color: #1f2327;
   color: #fff;
   margin: 0;
@@ -14,18 +19,24 @@ body {
   background-attachment: fixed;
 }
 
-/* Typography */
-
-nav a:hover {
-  @apply text-fuchsia-300 transition-all duration-300;
-}
-
 /* Navbar */
 
 nav a {
-  @apply px-8 py-4 uppercase tracking-wider text-sm font-bold;
+  @apply px-8 py-4 tracking-wider text-sm font-semibold;
 }
 
 nav ul li a {
   @apply flex items-center;
+}
+
+.nav-link-container {
+  @apply relative transition-all duration-300;
+}
+
+.nav-link-container::after {
+  @apply content-[''] absolute bottom-0 left-0 w-full h-1 bg-fuchsia-500/0 transition-all duration-300;
+}
+
+.nav-link-container:hover::after {
+  @apply bg-fuchsia-500/40 shadow-[0_4px_15px_rgba(217,70,219,0.6)] blur-md;
 }

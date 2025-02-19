@@ -1,0 +1,2 @@
+- [ ] add gifs for projects showcasing them
+- [ ] less spacing between navbar and about-title / projects-title
