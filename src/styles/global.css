@@ -40,3 +40,11 @@ nav ul li a {
 .nav-link-container:hover::after {
   @apply bg-fuchsia-500/40 shadow-[0_4px_15px_rgba(217,70,219,0.6)] blur-md;
 }
+
+.skill-card {
+  @apply bg-gray-800/50 rounded-lg p-2 flex flex-col items-center justify-center transition-transform hover:scale-105;
+}
+
+.skills-section {
+  @apply max-w-6xl mx-auto;
+}

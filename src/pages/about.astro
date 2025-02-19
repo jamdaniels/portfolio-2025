@@ -3,39 +3,102 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section class="text-center space-y-8">
-    <h1 class="text-3xl md:text-6xl font-bold mb-8">About me</h1>
-    <p class="max-w-xl mx-auto">
-      I'm a software engineer with a passion for building scalable and efficient
-      systems. I'm currently working as a software engineer at Google.
-    </p>
-    <h2 class="text-2xl font-bold mb-4">Education</h2>
-    <p>education timeline goes here...</p>
-    <h2 class="text-2xl font-bold mb-4">Skills</h2>
-    <h3 class="text-xl font-bold mb-4">Frontend</h3>
-    <ul>
-      <li>React</li>
-      <li>Astro</li>
-      <li>Tailwind CSS</li>
-      <li>Shadcn UI</li>
-      <li>daisyUI</li>
-      <li>TypeScript</li>
-      <li>TanStack</li>
-    </ul>
-    <h3 class="text-xl font-bold mb-4">Backend</h3>
-    <ul>
-      <li>Supabase</li>
-      <li>MySQL</li>
-      <li>PostgreSQL</li>
-    </ul>
-    <h3 class="text-xl font-bold mb-4">More</h3>
-    <ul>
-      <li>Git</li>
-      <li>GitHub</li>
-      <li>Node.js</li>
-      <li>VS Code</li>
-      <li>Cursor</li>
-      <li>Linux</li>
-    </ul>
+  <section class="text-center space-y-24">
+    <div>
+      <h1 class="text-3xl md:text-6xl font-bold mb-8">About me</h1>
+      <p class="max-w-xl mx-auto">
+        I'm a software engineer with a passion for building scalable and efficient
+        systems. I'm currently working as a software engineer at Google.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Education</h2>
+      <p>education timeline goes here...</p>
+    </div>
+
+    <div class="skills-section">
+      <h2 class="text-2xl font-bold mb-8">Skills</h2>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-20">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Frontend</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            <div class="skill-card">
+              <img src="/src/assets/React.svg" alt="React" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">React</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/Astro.svg" alt="Astro" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">Astro</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/tailwindcss.svg" alt="Tailwind CSS" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">Tailwind CSS</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/shadcn-ui_dark.svg" alt="Shadcn UI" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">Shadcn UI</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/daisyui.svg" alt="daisyUI" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">daisyUI</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/typescript.svg" alt="TypeScript" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">TypeScript</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/tanstack.svg" alt="TanStack" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">TanStack</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold mb-4">Backend</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            <div class="skill-card">
+              <img src="/src/assets/supabase.svg" alt="Supabase" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">Supabase</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/mysql.svg" alt="MySQL" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">MySQL</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/postgresql.svg" alt="PostgreSQL" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold mb-4">More</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            <div class="skill-card">
+              <img src="/src/assets/git.svg" alt="Git" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">Git</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/github-dark.svg" alt="GitHub" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">GitHub</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/nodejs.svg" alt="Node.js" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">Node.js</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/vscode.svg" alt="VS Code" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">VS Code</span>
+            </div>
+            <div class="skill-card">
+              <img src="/src/assets/linux.svg" alt="Linux" class="w-10 h-10 mx-auto mb-1" />
+              <span class="text-sm">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </Layout>

@@ -1,2 +1,13 @@
+# To-Do
+
+## Important
+
+- [ ] add more detailed about me section
+- [ ] add education section
+- [ ] add email icon to sociallinks
+
+## Optional
+
 - [ ] add gifs for projects showcasing them
-- [ ] less spacing between navbar and about-title / projects-title
+- [ ] change project-preview-cards to vertical?
+- [ ] add blog?
