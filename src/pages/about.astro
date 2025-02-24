@@ -6,15 +6,15 @@ import me from "../assets/me.png";
 
 <Layout>
   <section class="text-center space-y-24">
+    <h1 class="text-3xl md:text-6xl font-bold mb-8 md:mb-16">About me</h1>
     <div class="grid md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
       <div class="order-2 md:order-1">
-        <h1 class="text-3xl md:text-6xl font-bold mb-8">About me</h1>
-        <p class="text-left">
-          Ever since getting my first GameBoy when I was a kid, I've been fascinated by technology and this fascination only grew bigger when I got my first PC in my teenage years. I was hooked fast by the online world and found myself spending a lot of time playing games and when my first team needed a website, I was the one who wanted to create it. Using Photoshop to design and slice it up, I connected it with a CMS and we were live. I put the passion aside and enjoyed my teenage years however when I studied to get the certified system technician HF, I got hooked again.
+        <p class="md:text-left">
+          Ever since getting my first GameBoy when I was a kid, I've been fascinated by technology and this fascination only grew bigger when I got my first PC in my teenage years.<br/><br/> I was hooked fast by the online world and found myself spending a lot of time playing games and when my first team needed a website, I was the one who wanted to create it. Using Photoshop to design and slice it up, I connected it with a CMS and we were live. <br/><br/>I put the passion aside and enjoyed my teenage years however when I studied to get the certified system technician HF, I got hooked again. I've been working on a lot of personal projects and I love to lern and use new technologies.
         </p>
       </div>
       <div class="order-1 md:order-2">
-        <div class="w-64 h-64 mx-auto rounded-2xl overflow-hidden border-4 border-white/20 shadow-lg">
+        <div class="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-2xl overflow-hidden border-4 border-white/20 shadow-lg">
           <Image
             src={me}
             alt="Profile"
@@ -25,12 +25,24 @@ import me from "../assets/me.png";
       </div>
     </div>
 
-    <div>
-      <h2 class="text-2xl font-bold mb-4">Education</h2>
-      <p>2007 - 2011 Apprenticeship as automation technician EFZ</p>
-      <p>2012 - 2021 Technician technical customer service</p>
-      <p>2021 - Today Supervisor technical customer service</p>
-      <p>2019 - 2022 Certified system technician HF</p>
+    <div class="space-y-4">
+        <h2 class="text-2xl font-bold mb-8">Education</h2>
+      <div>
+        <h3 class="text-xl">2007 - 2011</h3>
+        <p>Apprenticeship as automation technician EFZ</p>
+      </div>
+      <div>
+        <h3 class="text-xl">2012 - 2021</h3>
+        <p>Technician technical customer service</p>
+      </div>
+      <div>
+        <h3 class="text-xl">2019 - 2022</h3>
+        <p>Certified system technician HF</p>
+      </div>
+      <div>
+        <h3 class="text-xl">2021 - Today</h3>
+        <p>Supervisor technical customer service</p>
+      </div>
     </div>
 
     <div class="skills-section">
@@ -38,78 +50,78 @@ import me from "../assets/me.png";
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <div>
-          <h3 class="text-xl font-bold mb-4">Frontend</h3>
+          <h3 class="text-xl mb-4">Frontend</h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
             <div class="skill-card">
-              <img src="/src/assets/React.svg" alt="React" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/React.svg" alt="React" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">React</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/Astro.svg" alt="Astro" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/Astro.svg" alt="Astro" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Astro</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/tailwindcss.svg" alt="Tailwind CSS" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/tailwindcss.svg" alt="Tailwind CSS" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Tailwind CSS</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/shadcn-ui_dark.svg" alt="Shadcn UI" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/shadcn-ui_dark.svg" alt="Shadcn UI" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Shadcn UI</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/daisyui.svg" alt="daisyUI" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/daisyui.svg" alt="daisyUI" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">daisyUI</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/typescript.svg" alt="TypeScript" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/typescript.svg" alt="TypeScript" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">TypeScript</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/tanstack.svg" alt="TanStack" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/tanstack.svg" alt="TanStack" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">TanStack</span>
             </div>
           </div>
         </div>
 
         <div>
-          <h3 class="text-xl font-bold mb-4">Backend</h3>
+          <h3 class="text-xl mb-4">Backend</h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
             <div class="skill-card">
-              <img src="/src/assets/supabase.svg" alt="Supabase" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/supabase.svg" alt="Supabase" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Supabase</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/mysql.svg" alt="MySQL" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/mysql.svg" alt="MySQL" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">MySQL</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/postgresql.svg" alt="PostgreSQL" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/postgresql.svg" alt="PostgreSQL" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">PostgreSQL</span>
             </div>
           </div>
         </div>
 
         <div>
-          <h3 class="text-xl font-bold mb-4">More</h3>
+          <h3 class="text-xl mb-4">More</h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
             <div class="skill-card">
-              <img src="/src/assets/git.svg" alt="Git" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/git.svg" alt="Git" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Git</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/github-dark.svg" alt="GitHub" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/github-dark.svg" alt="GitHub" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">GitHub</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/nodejs.svg" alt="Node.js" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/nodejs.svg" alt="Node.js" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Node.js</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/vscode.svg" alt="VS Code" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/vscode.svg" alt="VS Code" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">VS Code</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/linux.svg" alt="Linux" class="w-10 h-10 mx-auto mb-1" />
+              <img src="/src/assets/linux.svg" alt="Linux" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Linux</span>
             </div>
           </div>
