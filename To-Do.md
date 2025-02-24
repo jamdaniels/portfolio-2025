@@ -2,8 +2,6 @@
 
 ## Important
 
-- [ ] improve education section
-- [ ] improve about me section
 - [ ] add a gif/mov showing some pictures of HF education and other stuff in about page next to the text
 
 ## Optional
