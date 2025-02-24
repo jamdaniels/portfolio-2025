@@ -1,12 +1,55 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import spendy from "../../assets/spendy.jpeg";
+import reactIcon from "../../assets/React.svg";
+import supabaseIcon from "../../assets/supabase.svg";
+import tailwindIcon from "../../assets/tailwindcss.svg";
+import githubIcon from "../../assets/github-dark.svg";
 ---
 
-<Layout>
+<Layout title="Spendy">
   <section class="text-center space-y-8">
-    <h1 class="text-3xl md:text-6xl font-bold mb-8">Spendy</h1>
-    <p class="max-w-xl mx-auto">
-      Spendy is a clean, simle app to track your spending.
+    <div class="mb-16">
+      <h1 class="text-3xl md:text-6xl font-bold mb-4">Spendy</h1>
+      <p class="text-sm text-gray-400">#personal-projects</p>
+    </div>
+    <div
+      id="project-card"
+      class="bg-gray-900 max-w-3xl mx-auto p-6 rounded-lg shadow-md border border-gray-800 aspect-16/9 relative overflow-hidden"
+    >
+      <Image
+        src={spendy}
+        alt="Spendy Project Screenshot"
+        class="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+      />
+    </div>
+    <p class="max-w-xl mx-auto mb-16">
+      Spendy is a clean, simple app to track your spending.
     </p>
+    <h2 class="text-2xl font-bold">Used Technologies</h2>
+    <div class="flex justify-center gap-6 mt-4">
+      <Image
+        src={reactIcon}
+        alt="React"
+        class="w-6 h-6 hover:scale-110 transition-all duration-300"
+      />
+      <Image
+        src={tailwindIcon}
+        alt="Tailwind CSS"
+        class="w-6 h-6 hover:scale-110 transition-all duration-300"
+      />
+      <Image
+        src={supabaseIcon}
+        alt="Supabase"
+        class="w-6 h-6 hover:scale-110 transition-all duration-300"
+      />
+      <Image
+        src={githubIcon}
+        alt="GitHub"
+        class="w-6 h-6 hover:scale-110 transition-all duration-300"
+      />
+    </div>
   </section>
 </Layout>
