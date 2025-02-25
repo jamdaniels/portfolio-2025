@@ -2,6 +2,21 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import me from "../assets/me.png";
+import reactIcon from "../assets/React.svg";
+import astroIcon from "../assets/Astro.svg";
+import tailwindIcon from "../assets/tailwindcss.svg";
+import shadcnIcon from "../assets/shadcn-ui_dark.svg";
+import daisyuiIcon from "../assets/daisyui.svg";
+import typescriptIcon from "../assets/typescript.svg";
+import tanstackIcon from "../assets/tanstack.svg";
+import supabaseIcon from "../assets/supabase.svg";
+import mysqlIcon from "../assets/mysql.svg";
+import postgresqlIcon from "../assets/postgresql.svg";
+import gitIcon from "../assets/git.svg";
+import githubIcon from "../assets/github-dark.svg";
+import nodejsIcon from "../assets/nodejs.svg";
+import vscodeIcon from "../assets/vscode.svg";
+import linuxIcon from "../assets/linux.svg";
 ---
 
 <Layout title="About me">
@@ -53,31 +68,31 @@ import me from "../assets/me.png";
           <h3 class="text-xl mb-4">Frontend</h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
             <div class="skill-card">
-              <img src="/src/assets/React.svg" alt="React" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={reactIcon} alt="React" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">React</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/Astro.svg" alt="Astro" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={astroIcon} alt="Astro" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Astro</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/tailwindcss.svg" alt="Tailwind CSS" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={tailwindIcon} alt="Tailwind CSS" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Tailwind CSS</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/shadcn-ui_dark.svg" alt="Shadcn UI" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={shadcnIcon} alt="Shadcn UI" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Shadcn UI</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/daisyui.svg" alt="daisyUI" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={daisyuiIcon} alt="daisyUI" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">daisyUI</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/typescript.svg" alt="TypeScript" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={typescriptIcon} alt="TypeScript" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">TypeScript</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/tanstack.svg" alt="TanStack" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={tanstackIcon} alt="TanStack" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">TanStack</span>
             </div>
           </div>
@@ -87,15 +102,15 @@ import me from "../assets/me.png";
           <h3 class="text-xl mb-4">Backend</h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
             <div class="skill-card">
-              <img src="/src/assets/supabase.svg" alt="Supabase" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={supabaseIcon} alt="Supabase" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Supabase</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/mysql.svg" alt="MySQL" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={mysqlIcon} alt="MySQL" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">MySQL</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/postgresql.svg" alt="PostgreSQL" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={postgresqlIcon} alt="PostgreSQL" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">PostgreSQL</span>
             </div>
           </div>
@@ -105,23 +120,23 @@ import me from "../assets/me.png";
           <h3 class="text-xl mb-4">More</h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
             <div class="skill-card">
-              <img src="/src/assets/git.svg" alt="Git" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={gitIcon} alt="Git" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Git</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/github-dark.svg" alt="GitHub" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={githubIcon} alt="GitHub" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">GitHub</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/nodejs.svg" alt="Node.js" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={nodejsIcon} alt="Node.js" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Node.js</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/vscode.svg" alt="VS Code" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={vscodeIcon} alt="VS Code" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">VS Code</span>
             </div>
             <div class="skill-card">
-              <img src="/src/assets/linux.svg" alt="Linux" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
+              <Image src={linuxIcon} alt="Linux" class="w-10 h-10 mx-auto mb-1" loading="lazy" />
               <span class="text-sm">Linux</span>
             </div>
           </div>
