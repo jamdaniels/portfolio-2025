@@ -43,7 +43,7 @@ nav ul li a {
 }
 
 .skill-card {
-  @apply bg-gray-800/50 rounded-lg p-2 flex flex-col items-center justify-center transition-transform hover:scale-105;
+  @apply bg-gray-800/50 rounded-lg p-4 flex flex-col items-center justify-center transition-transform hover:scale-103;
 }
 
 .skills-section {
